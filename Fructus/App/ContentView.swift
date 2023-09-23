@@ -17,13 +17,21 @@ struct ContentView: View {
     // MARK: - BODY
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(fruits.shuffled()) { fruit in
-                    FruitRowView(fruit: fruit)
-                        .padding(.vertical, 4)
+                    NavigationLink(
+                        value: fruit
+                    ) {
+                        FruitRowView(fruit: fruit)
+                            .padding(.vertical, 4)
+                    }
                 }
             }
+            .navigationDestination(for: Fruit.self) { link in
+                FruitDetailsView(fruit: link)
+            }
+            .listStyle(.inset)
             .navigationTitle("Fruits")
         } //: NAVIGATION
     }

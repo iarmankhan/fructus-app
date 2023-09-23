@@ -11,6 +11,10 @@
 		C2592A3E2ABEFE9C000D801E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A3D2ABEFE9C000D801E /* ContentView.swift */; };
 		C2592A402ABEFE9D000D801E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2592A3F2ABEFE9D000D801E /* Assets.xcassets */; };
 		C2592A432ABEFE9D000D801E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2592A422ABEFE9D000D801E /* Preview Assets.xcassets */; };
+		C2592A4C2ABF0270000D801E /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A4B2ABF0270000D801E /* FruitCardView.swift */; };
+		C2592A4F2ABF03B3000D801E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A4E2ABF03B3000D801E /* ColorExtension.swift */; };
+		C2592A512ABF060A000D801E /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A502ABF060A000D801E /* StartButtonView.swift */; };
+		C2592A532ABF0810000D801E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A522ABF0810000D801E /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C2592A3D2ABEFE9C000D801E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2592A3F2ABEFE9D000D801E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2592A422ABEFE9D000D801E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2592A4B2ABF0270000D801E /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		C2592A4E2ABF03B3000D801E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C2592A502ABF060A000D801E /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		C2592A522ABF0810000D801E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		C2592A3A2ABEFE9C000D801E /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				C2592A3B2ABEFE9C000D801E /* FructusApp.swift */,
-				C2592A3D2ABEFE9C000D801E /* ContentView.swift */,
+				C2592A4D2ABF03A9000D801E /* Utilities */,
+				C2592A4A2ABF024D000D801E /* Views */,
+				C2592A492ABF0227000D801E /* App */,
 				C2592A3F2ABEFE9D000D801E /* Assets.xcassets */,
 				C2592A412ABEFE9D000D801E /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				C2592A422ABEFE9D000D801E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2592A492ABF0227000D801E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C2592A3B2ABEFE9C000D801E /* FructusApp.swift */,
+				C2592A3D2ABEFE9C000D801E /* ContentView.swift */,
+				C2592A522ABF0810000D801E /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C2592A4A2ABF024D000D801E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2592A4B2ABF0270000D801E /* FruitCardView.swift */,
+				C2592A502ABF060A000D801E /* StartButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2592A4D2ABF03A9000D801E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C2592A4E2ABF03B3000D801E /* ColorExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2592A4C2ABF0270000D801E /* FruitCardView.swift in Sources */,
+				C2592A4F2ABF03B3000D801E /* ColorExtension.swift in Sources */,
 				C2592A3E2ABEFE9C000D801E /* ContentView.swift in Sources */,
+				C2592A532ABF0810000D801E /* OnboardingView.swift in Sources */,
+				C2592A512ABF060A000D801E /* StartButtonView.swift in Sources */,
 				C2592A3C2ABEFE9C000D801E /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

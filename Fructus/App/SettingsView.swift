@@ -42,6 +42,29 @@ struct SettingsView: View {
                     }
                     
                     // MARK: - SECTION 2
+                    GroupBox(
+                        label:
+                            SettingsLabelView(
+                                label: "Application",
+                                labelIcon: "apps.iphone"
+                            )
+                    ) {
+                        SettingsRowView(name: "Developer", content: "Arman Khan")
+                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Compatibility", content: "iOS 16+")
+                        SettingsRowView(
+                            name: "Website",
+                            linkLabel: "Arman Khan",
+                            linkDestination: "https://armankhan.dev"
+                        )
+                        SettingsRowView(
+                            name: "Twitter",
+                            linkLabel: "@codingwitharman",
+                            linkDestination: "https://twitter.com/codingwitharman"
+                        )
+                        SettingsRowView(name: "SwiftUI", content: "2.0")
+                        SettingsRowView(name: "Version", content: "1.1.0")
+                    }
                     
                     // MARK: - SECTION 3
                     

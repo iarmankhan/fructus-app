@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - PROPERTIES
-    
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
-    
+    @State private var isShowingSettings: Bool = false
+   
     var fruits: [Fruit] = fruitsData
     
     // MARK: - BODY
@@ -33,6 +32,15 @@ struct ContentView: View {
             }
             .listStyle(.inset)
             .navigationTitle("Fruits")
+            .toolbar {
+                Button {
+                    isShowingSettings.toggle()
+                } label: {
+                    Image(systemName: "gear")
+                }.sheet(isPresented: $isShowingSettings) {
+                    SettingsView()
+                }
+            }
         } //: NAVIGATION
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C24B6F722AC09A06006843A5 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B6F712AC09A06006843A5 /* FruitNutrientsView.swift */; };
+		C24B6F742AC09E3A006843A5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B6F732AC09E3A006843A5 /* SettingsView.swift */; };
 		C2592A3C2ABEFE9C000D801E /* FructusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A3B2ABEFE9C000D801E /* FructusApp.swift */; };
 		C2592A3E2ABEFE9C000D801E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2592A3D2ABEFE9C000D801E /* ContentView.swift */; };
 		C2592A402ABEFE9D000D801E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2592A3F2ABEFE9D000D801E /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		C24B6F712AC09A06006843A5 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
+		C24B6F732AC09E3A006843A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C2592A382ABEFE9C000D801E /* Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2592A3B2ABEFE9C000D801E /* FructusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusApp.swift; sourceTree = "<group>"; };
 		C2592A3D2ABEFE9C000D801E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				C2592A3D2ABEFE9C000D801E /* ContentView.swift */,
 				C2592A522ABF0810000D801E /* OnboardingView.swift */,
 				C2592A5C2ABF565E000D801E /* FruitDetailsView.swift */,
+				C24B6F732AC09E3A006843A5 /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				C2592A5B2ABF4C5B000D801E /* FruitRowView.swift in Sources */,
 				C2592A4F2ABF03B3000D801E /* ColorExtension.swift in Sources */,
 				C2592A3E2ABEFE9C000D801E /* ContentView.swift in Sources */,
+				C24B6F742AC09E3A006843A5 /* SettingsView.swift in Sources */,
 				C2592A532ABF0810000D801E /* OnboardingView.swift in Sources */,
 				C2592A5F2ABF5957000D801E /* FruitHeaderView.swift in Sources */,
 				C2592A512ABF060A000D801E /* StartButtonView.swift in Sources */,

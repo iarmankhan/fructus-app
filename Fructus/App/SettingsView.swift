@@ -11,6 +11,7 @@ struct SettingsView: View {
     // MARK: - PROPERITES
     @Environment(\.dismiss) var dismiss
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -41,7 +42,45 @@ struct SettingsView: View {
                         }
                     }
                     
+                    
                     // MARK: - SECTION 2
+                    
+                    GroupBox(
+                        label:
+                            SettingsLabelView(
+                                label: "Customisation",
+                                labelIcon: "paintbrush"
+                            )
+                    ) {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading  )
+                        
+                        Toggle(isOn: $isOnboarding) {
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
+                    }
+                    
+                    // MARK: - SECTION 3
+                    
                     GroupBox(
                         label:
                             SettingsLabelView(
@@ -66,7 +105,6 @@ struct SettingsView: View {
                         SettingsRowView(name: "Version", content: "1.1.0")
                     }
                     
-                    // MARK: - SECTION 3
                     
                 } //: VSTACK
                 .padding()
